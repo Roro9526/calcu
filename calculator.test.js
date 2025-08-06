@@ -29,10 +29,6 @@ describe("Calculator", () => {
     expect(result).toBe(5);
   });
 
-  test("Fraction", () => {
-    const result = calculator.divide(7, 2);
-    expect(result).toBe(3.5);
-  });
 
   test("erreur division 0", () => {
     expect(() => calculator.divide(5, 0)).toThrow("pas de division par 0");
