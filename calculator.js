@@ -14,7 +14,7 @@ export default class Calculator {
 
   divide(a, b) {
     if (b === 0) {
-      throw new Error("division par 0");
+      throw new Error("pas de division par 0");
     }
     return a / b;
   }
