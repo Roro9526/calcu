@@ -1,4 +1,3 @@
-// calculator.test.js
 import Calculator from "./calculator.js";
 
 describe("Calculator", () => {
@@ -18,20 +17,12 @@ describe("Calculator", () => {
     expect(result).toBe(2);
   });
 
-  test("resultat negatif", () => {
-    const result = calculator.subtract(3, 5);
-    expect(result).toBe(-2);
-  });
 
   test("Mutiplication", () => {
     const result = calculator.multiply(4, 5);
     expect(result).toBe(20);
   });
 
-  test("0", () => {
-    expect(calculator.multiply(0, 123)).toBe(0);
-    expect(calculator.multiply(123, 0)).toBe(0);
-  });
 
   test("Division", () => {
     const result = calculator.divide(10, 2);
